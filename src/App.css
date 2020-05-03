@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+:root {
+  --Blue:#08197f;
+  --White:#fff;
+  --Green:rgb(11, 116, 11);
+  --Dark:#232528;
+  --Lgrey:rgb(0,0,0);
+ --Grey: #838383;
+ --Org:#ff8f00;
+ --Off:#e0e0e0;
+}
+*:hover{
+text-decoration: none !important;
+}
+body {
+  font-family: 'Nunito Sans', sans-serif ;
+  background: var(--Off) !important;
+  color:var(Dark) !important;
+}
+.text-cool{
+  font-family: 'Nunito Sans', sans-serif ;
+}
+.text-title{
+  font-family: 'Mukta:700', sans-serif;
+  letter-spacing: 0.3rem;
+  text-transform: uppercase;
+  color:var(Dark);
+}
+.text-serif{
+  font-family: 'PT serif';
+}
+.text-blue{
+  color: var(--Blue);
+}
+.text-blue:hover{
+  color: var(--Off);
+}
+.grey{
+  background-color: var(--Grey) !important;
+  border-bottom: 5px solid var(--Org);
+}
+.text-green{
+  color:var(--Green);
+}
+.text-white{
+  color: var(--White);
+}
+.start{
+  font-size: 4rem;
+  display: none;
+  transition: all 5s linear;
+  transition-delay: 1s !important;
+}
+.box{
+  background-color: var(--Grey);
+  padding: 15px;
+  border-radius: 15px;
+}
+.ttt{
+  color: var(--Blue);
+  border-radius: 40px;
+  cursor: pointer;
+}
+.ttt:hover{
+  
+  transition:all .25s linear;
+  color: var(--Org);
+  transform: scale(1.2);
+}
+.nnn{
+  color: var(--Off);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.zoom{
+  position: relative;
+  top:0;
+  left:0;
+  transition: all .5s ease-in-out;
+}
+.zoom:hover{
+  transform: scale(1.2);
+  
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.grad{
+  transition: all .25s ease-in-out;
+}
+.grad:hover{
+  transform: scale(1.5);
+}
+.mt10 {
+  margin-top:200px !important;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.button2{
+  position: relative;
+  
 }
