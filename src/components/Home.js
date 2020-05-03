@@ -35,7 +35,7 @@ export default class Home extends Component {
               <span className="mr-2">
                 <i className="fas fa-play-circle fa-2x"></i>
               </span>
-              Learn about stocks
+              Learn more
               </div>
             </ButtonContainer2>
           </Link>

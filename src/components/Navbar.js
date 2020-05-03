@@ -12,12 +12,12 @@ export default class Navbar extends Component {
 <img src={logo} alt='home' className="navbar-brand" height="75px"></img>
                </Link>
             
-<Link to="/" className="ml-auto">
+<Link to="/details" className="ml-auto">
     <ButtonContainer>
         <span className="mr-2">
-        <i className="fas fa-home"></i>
+        <i className="fas fa-book"></i>
         </span>
-        return
+        learn more
     </ButtonContainer>
 </Link>
            </NavWrapper>

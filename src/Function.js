@@ -1,6 +1,5 @@
 import React from 'react';
 import Plot from 'react-plotly.js';
-import { ButtonContainer2 } from "./Buttons";
 
 class Stats extends React.Component{
     constructor(props){
@@ -228,27 +227,19 @@ class Stats extends React.Component{
         let date = today.getFullYear()+'-'+(today.getMonth()+1)+'-'+today.getDate();
         
         return(
-            <div className="container col-10 align-items-center
-            mx-auto">
-                <div className="row align-items-center mx-auto mt-4 mb-4">
-                <form className="mx-auto">
-                    <input type="text" id="add-item" className="width" value={this.state.symbol} onChange={e => this.handleChange(e.target.value)} placeholder="Ticker Symbol"/>
-            
+            <div>
+                <form>
+                    <input type="text" id="add-item" value={this.state.symbol} onChange={e => this.handleChange(e.target.value)} placeholder="Ticker Symbol"/>
                     <button id="submit" onClick={this.clickHandler}>Search</button>
-                    
                 </form>
-                </div>
-                <div className="row">
-                <div id="options" className="mx-auto mb-4">
+                <div id="options">
                     <button id="bbands" onClick={this.clickBbandsHandler}>Bollinger Bands</button>
                     <button id="ma" onClick={this.clickMAHandler}>Moving Average</button>
                     <label id="periodlabel" htmlFor="period">N:</label>
                     <input type="number" id="period" name="period" min="1" max="300" value={this.state.maPeriod} onChange={e => this.mavalueHandler(e.target.value)}/>
 
                 </div>
-                </div>
-                <div className="row">
-                    <div className="mx-auto col-10">
+                
                 <Plot
                     data={[
                     {
@@ -360,8 +351,6 @@ class Stats extends React.Component{
                     }
                 } 
                 />
-                </div>
-                </div>
             </div>
         )
     }
