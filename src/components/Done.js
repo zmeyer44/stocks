@@ -20,18 +20,18 @@ export default class Done extends Component {
         </div>
         <div className="row mt-3 align-items-center">
 
-            <div className="col-lg-4 col-mg-3 col-10">
+            <div className="mx-auto">
 <img src="../img/approval-512.png" width="300px" alt="logo" className="mx-5"></img>
             </div>
-            <div className="col-lg-4 col-md-4 col-0"></div>
-            <div className="col-lg-3 col-md-5 col-10 mx-auto">
-          <Link to="/" className="mx-auto my-0 align-items-center">
+            <div className="col-lg-4 col-0"></div>
+            <div className=" mx-auto">
+          <Link to="/stats" className="mx-auto my-0 align-items-center">
             <ButtonContainer2 className="px-4">
                 <div className="row align-items-center">
               <span className="mr-2">
-                <i className="fas fa-home fa-2x"></i>
+                <i className="fas fa-search fa-2x"></i>
               </span>
-              return home
+              Look for a Stock
               </div>
             </ButtonContainer2>
           </Link>
